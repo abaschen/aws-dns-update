@@ -43,9 +43,13 @@ AWS_KEY=AWSKEY80247523485je39A/+3
 
 #you can get this one in Route53
 AWS_ZONE_ID=ZONEIDINROUTE53
-#
+
 DNS_FQDN=sub.domain.com
+
+# TTL for the A record as we overwrite it. 
 DNS_TTL=432000
+# in seconds, the interval for the job
+DNS_QUERY_INTERVAL=1800
 ```
 
 ##### With Docker
