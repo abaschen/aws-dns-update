@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  route53:
+    build: .
+#    image: TecHunter/aws-dns-update:latest
+    environment:
+      - "AWS_ID=${AWS_ID}"
+      - "AWS_KEY=${AWS_KEY}"
+      - "DNS_FQDN=${DNS_FQDN}"
+      - "AWS_ZONE_ID=${AWS_ZONE_ID}"
+      - "DNS_QUERY_INTERVAL=1800"
